@@ -7,6 +7,7 @@ const userController = require('../controller/userController');
 
 router.post('/register', userController.registerController)
 
+// 用户登录
 router.post('/login', (req, res) => {
     body = req.body;
     res.send({
